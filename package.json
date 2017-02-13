@@ -1,0 +1,22 @@
+{
+  "name": "serial-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build --runtime=electron --target=$(npm view electron version) --target_arch=x64 --directory=node_modules/serialport/ --update-binary --dist-url=https://atom.io/download/atom-shell",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "*",
+    "electron-reload": "^1.1.0",
+    "node-gyp": "*",
+    "node-pre-gyp": "*"
+  },
+  "dependencies": {
+    "serialport": "*"
+  }
+}
